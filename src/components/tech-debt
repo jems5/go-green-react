@@ -1,0 +1,29 @@
+1. Rework on the skills section
+
+- sort out the loading of the bar graph
+- sort out the running numbers in the stats container
+
+Fixed List
+
+1. Pricing section hover button not working
+
+- suspect it's because inline styling
+- might need to restructure the data array
+
+2. Rework on the skills section
+
+- consider using the same approach as Pricing component
+- define the graph component first, call the component again in the return statement together with the copywriting
+
+3. Rework into the dotted lines underneath headers
+
+- pricing and footer are ok
+- set position at the header, add padding to the header and move the dotted lines accordingly
+- might need to look into how to make the dotted lines responsive as well, maybe using calc() to get the accurate placement
+
+Notes:
+if you're using vite (which is our case), you need to handle env files using import.meta.env
+
+if using cra, then handle using process.env
+
+if hover effect goes away instantly after cursor leaves, apply transition to base element as well
