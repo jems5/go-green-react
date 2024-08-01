@@ -1,23 +1,27 @@
 import { FaBullseye, FaEye, FaSlidersH } from "react-icons/fa";
+import aboutMission from "../assets/about-mission.jpg";
+import aboutVision from "../assets/about-vision.jpg";
+import aboutObjective from "../assets/about-objective.jpg";
+import about from "..//assets/about.jpg";
 
 function AboutUs() {
   const containerData = [
     {
-      imgSource: "/src/assets/about-mission.jpg",
+      imgSource: aboutMission,
       logo: FaBullseye,
       title: "Our Mission",
       text: "Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis",
       buttonText: "Read More",
     },
     {
-      imgSource: "/src/assets/about-vision.jpg",
+      imgSource: aboutVision,
       logo: FaEye,
       title: "Our Vision",
       text: "Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis",
       buttonText: "Read More",
     },
     {
-      imgSource: "/src/assets/about-objective.jpg",
+      imgSource: aboutObjective,
       logo: FaSlidersH,
       title: "Our Objective",
       text: "Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis",
@@ -32,7 +36,7 @@ function AboutUs() {
       <p className="secondary-text-grey">morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
       <div className="about-us-header-container">
         <div className="about-us-left-container">
-          <img src="/src/assets/about.jpg" alt="" width={550} height={300} />
+          <img src={about} alt="" width={550} height={300} />
         </div>
         <div className="about-us-right-container">
           <h1 className="secondary-header-green">Welcome to Our Site</h1>

@@ -1,14 +1,20 @@
 import { useState } from "react";
 import { FaArrowUpRightFromSquare, FaEye } from "react-icons/fa6";
+import portfolio1 from "../assets/portfolio-1.jpg";
+import portfolio2 from "../assets/portfolio-2.jpg";
+import portfolio3 from "../assets/portfolio-3.jpg";
+import portfolio4 from "../assets/portfolio-4.jpg";
+import portfolio5 from "../assets/portfolio-5.jpg";
+import portfolio6 from "../assets/portfolio-6.jpg";
 
 function Portfolio() {
   const skill = [
-    { id: "1", title: "Lorem ipsum dolor", text: "WEB DESIGN", imgSource: "src/assets/portfolio-1.jpg" },
-    { id: "2", title: "Nulla ullamcorper pharetra", text: "WEB DEVELOPMENT", imgSource: "src/assets/portfolio-2.jpg" },
-    { id: "3", title: "Phasellus eget dictum", text: "APP DESIGN", imgSource: "src/assets/portfolio-3.jpg" },
-    { id: "4", title: "Donec mattis vestibulum", text: "APP DEVELOPMENT", imgSource: "src/assets/portfolio-4.jpg" },
-    { id: "5", title: "Pellentesque ullamcorper", text: "WEB DESIGN", imgSource: "src/assets/portfolio-5.jpg" },
-    { id: "6", title: "Sed pretium sapien", text: "WEB DEVELOPMENT", imgSource: "src/assets/portfolio-6.jpg" },
+    { id: "1", title: "Lorem ipsum dolor", text: "WEB DESIGN", imgSource: portfolio1 },
+    { id: "2", title: "Nulla ullamcorper pharetra", text: "WEB DEVELOPMENT", imgSource: portfolio2 },
+    { id: "3", title: "Phasellus eget dictum", text: "APP DESIGN", imgSource: portfolio3 },
+    { id: "4", title: "Donec mattis vestibulum", text: "APP DEVELOPMENT", imgSource: portfolio4 },
+    { id: "5", title: "Pellentesque ullamcorper", text: "WEB DESIGN", imgSource: portfolio5 },
+    { id: "6", title: "Sed pretium sapien", text: "WEB DEVELOPMENT", imgSource: portfolio6 },
   ];
 
   const filterData = [{ title: "ALL" }, { title: "WEB DESIGN" }, { title: "WEB DEVELOPMENT" }, { title: "APP DESIGN" }, { title: "APP DEVELOPMENT" }];
