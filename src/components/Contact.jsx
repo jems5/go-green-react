@@ -1,5 +1,5 @@
-import { EntypoLocationPin, EntypoMail } from "react-entypo";
-import { FaPhone } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 import dotenv from "dotenv";
 ("Use client");
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
@@ -7,9 +7,9 @@ import { useState } from "react";
 
 function Contact() {
   const dataSet = [
-    { header: "ADDRESS", icon: EntypoLocationPin, desc: "Your Location, City, Country" },
+    { header: "ADDRESS", icon: FaLocationPin, desc: "Your Location, City, Country" },
     { header: "PHONE NUMBER", icon: FaPhone, desc: "+123-456-789" },
-    { header: "EMAIL", icon: EntypoMail, desc: "jemmychan@gmail.com" },
+    { header: "EMAIL", icon: FaEnvelope, desc: "jemmychan@gmail.com" },
   ];
 
   const containerStyle = {
